@@ -7,7 +7,11 @@ export const translations = {
       findMechanics: 'Find Mechanics',
       marketplace: 'Marketplace',
       diagnostics: 'AI Diagnostics',
-      signIn: 'Sign In'
+      scanner: 'Parts Scanner',
+      signIn: 'Sign In',
+      register: 'Register',
+      registerAsMechanic: 'Register as Mechanic',
+      registerAsSeller: 'Register as Seller'
     },
     
     // Home page
@@ -138,7 +142,11 @@ export const translations = {
       findMechanics: 'Cari Mekanik',
       marketplace: 'Pasaran',
       diagnostics: 'Diagnostik AI',
-      signIn: 'Log Masuk'
+      scanner: 'Pengimbas Alat Ganti',
+      signIn: 'Log Masuk',
+      register: 'Daftar',
+      registerAsMechanic: 'Daftar sebagai Mekanik',
+      registerAsSeller: 'Daftar sebagai Penjual'
     },
     
     // Home page
