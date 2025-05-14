@@ -6,6 +6,14 @@ MatMoto-PomenPro is a Next.js application that connects motorists with nearby me
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fyourusername%2Fmatmoto-pomenpro)
 
+## Latest UI Enhancements (May 2025)
+
+- Modern CTA components with haptic feedback and visual effects
+- Animated hero section with gradient text and floating elements
+- Scroll reveal animations for enhanced user experience
+- Interactive feature cards with hover effects
+- Multilingual UI components in English and Bahasa Melayu
+
 ## Features
 
 ### Mechanic Finder
