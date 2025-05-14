@@ -33,6 +33,30 @@ module.exports = {
           900: '#0f172a',
         },
       },
+      animation: {
+        'gradient-x': 'gradient-x 15s ease infinite',
+        'float': 'float 3s ease-in-out infinite',
+        'pulse-ring': 'pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite',
+        'shimmer': 'shimmer 2s infinite',
+      },
+      keyframes: {
+        'gradient-x': {
+          '0%, 100%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+        },
+        'float': {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+        'pulse-ring': {
+          '0%': { transform: 'scale(0.8)', opacity: '0.8' },
+          '80%, 100%': { transform: 'scale(2)', opacity: '0' },
+        },
+        'shimmer': {
+          '0%': { backgroundPosition: '-200% 0' },
+          '100%': { backgroundPosition: '200% 0' },
+        },
+      },
     },
   },
   plugins: [

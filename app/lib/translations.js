@@ -14,7 +14,20 @@ export const translations = {
     home: {
       welcome: 'Welcome to MatMoto-PomenPro',
       findMechanicsDesc: 'Connect with nearby mechanics using AI-driven matching.',
-      marketplaceDesc: 'Buy and sell vehicles and parts with AI-powered assistance.'
+      marketplaceDesc: 'Buy and sell vehicles and parts with AI-powered assistance.',
+      findMechanicsBtn: 'Find Mechanics Now',
+      marketplaceBtn: 'Browse Marketplace',
+      featuredServices: 'Our Services',
+      mechanicFinder: 'Mechanic Finder',
+      mechanicFinderDesc: 'Find and book qualified mechanics near you with real-time availability.',
+      aiDiagnostics: 'AI Diagnostics',
+      aiDiagnosticsDesc: 'Get instant vehicle diagnostics powered by our advanced AI technology.',
+      tryDiagnostics: 'Try Diagnostics',
+      partsMarketplace: 'Parts Marketplace',
+      partsMarketplaceDesc: 'Buy and sell vehicle parts with verified sellers and AI price suggestions.',
+      readyToStart: 'Ready to get started?',
+      readyToStartDesc: 'Join thousands of users who trust MatMoto-PomenPro for their vehicle needs.',
+      getStarted: 'Get Started Now'
     },
     
     // Mechanics page
@@ -132,7 +145,20 @@ export const translations = {
     home: {
       welcome: 'Selamat Datang ke MatMoto-PomenPro',
       findMechanicsDesc: 'Hubungi mekanik berdekatan menggunakan padanan AI.',
-      marketplaceDesc: 'Beli dan jual kenderaan dan alat ganti dengan bantuan AI.'
+      marketplaceDesc: 'Beli dan jual kenderaan dan alat ganti dengan bantuan AI.',
+      findMechanicsBtn: 'Cari Mekanik Sekarang',
+      marketplaceBtn: 'Layari Pasaran',
+      featuredServices: 'Perkhidmatan Kami',
+      mechanicFinder: 'Pencari Mekanik',
+      mechanicFinderDesc: 'Cari dan tempah mekanik berkelayakan berdekatan anda dengan ketersediaan masa nyata.',
+      aiDiagnostics: 'Diagnostik AI',
+      aiDiagnosticsDesc: 'Dapatkan diagnostik kenderaan segera yang dikuasakan oleh teknologi AI kami yang canggih.',
+      tryDiagnostics: 'Cuba Diagnostik',
+      partsMarketplace: 'Pasaran Alat Ganti',
+      partsMarketplaceDesc: 'Beli dan jual alat ganti kenderaan dengan penjual yang disahkan dan cadangan harga AI.',
+      readyToStart: 'Bersedia untuk bermula?',
+      readyToStartDesc: 'Sertai ribuan pengguna yang mempercayai MatMoto-PomenPro untuk keperluan kenderaan mereka.',
+      getStarted: 'Mulakan Sekarang'
     },
     
     // Mechanics page
