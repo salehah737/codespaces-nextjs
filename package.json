@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "matmoto-pomenpro",
   "version": "1.0.0",
   "private": true,
@@ -41,5 +42,17 @@
     "eslint": "^8.57.0",
     "eslint-config-next": "^14.2.21",
     "prisma": "^6.7.0"
+=======
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^14.2.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+>>>>>>> main
   }
 }
