@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { LanguageProvider } from './context/LanguageContext';
+import AIAssistant from './components/AIAssistant';
+import { AnalyticsProvider } from './context/AnalyticsContext';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,11 +18,14 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <LanguageProvider>
-          <Navbar />
-          <main className="min-h-screen">
-            {children}
-          </main>
-          <Footer />
+          <AnalyticsProvider>
+            <Navbar />
+            <main className="min-h-screen">
+              {children}
+            </main>
+            <AIAssistant />
+            <Footer />
+          </AnalyticsProvider>
         </LanguageProvider>
       </body>
     </html>

@@ -1,5 +1,7 @@
 'use client';
 
+'use client';
+
 import Link from 'next/link';
 import { useLanguage } from '../context/LanguageContext';
 

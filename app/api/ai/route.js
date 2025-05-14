@@ -52,7 +52,7 @@ function mockDiagnostics(vehicleInfo) {
       problem: 'Battery or starter issue',
       confidence: 82,
       description: 'Difficulty starting could indicate a weak battery, faulty starter, or alternator problems.',
-      recommendation: 'Have your battery tested. If it's good, the starter or alternator may need inspection.',
+      recommendation: 'Have your battery tested. If it is good, the starter or alternator may need inspection.',
       urgency: 'High',
       estimatedCost: '$100-500 depending on the component that needs replacement'
     };

@@ -1,10 +1,3 @@
-const withPWA = require('next-pwa')({
-  dest: 'public',
-  register: true,
-  skipWaiting: true,
-  disable: process.env.NODE_ENV === 'development'
-});
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -19,5 +12,14 @@ const nextConfig = {
     serverComponentsExternalPackages: ['@prisma/client'],
   },
 };
+
+// Only use PWA in production to avoid development issues
+const withPWA = process.env.NODE_ENV === 'production'
+  ? require('next-pwa')({
+      dest: 'public',
+      register: true,
+      skipWaiting: true,
+    })
+  : (config) => config;
 
 module.exports = withPWA(nextConfig);
