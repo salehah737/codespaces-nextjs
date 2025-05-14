@@ -56,23 +56,27 @@ export default function ScannerPage() {
                 </div>
               </Link>
               
-              <div className="border rounded-lg p-4 bg-gray-50 h-full opacity-60">
-                <div className="aspect-w-16 aspect-h-9 w-full h-32 bg-gray-100 rounded-md mb-3 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-gray-400">HONDA</span>
+              <Link href="/scanner/honda" className="block">
+                <div className="border rounded-lg p-4 hover:border-primary-500 hover:bg-primary-50 transition-colors h-full">
+                  <div className="aspect-w-16 aspect-h-9 w-full h-32 bg-gray-100 rounded-md mb-3 flex items-center justify-center">
+                    <span className="text-2xl font-bold text-gray-400">HONDA</span>
+                  </div>
+                  <h3 className="font-medium text-center">
+                    {language === 'ms' ? 'Pengimbas Honda' : 'Honda Scanner'}
+                  </h3>
                 </div>
-                <h3 className="font-medium text-center text-gray-500">
-                  {language === 'ms' ? 'Akan Datang' : 'Coming Soon'}
-                </h3>
-              </div>
+              </Link>
               
-              <div className="border rounded-lg p-4 bg-gray-50 h-full opacity-60">
-                <div className="aspect-w-16 aspect-h-9 w-full h-32 bg-gray-100 rounded-md mb-3 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-gray-400">PROTON</span>
+              <Link href="/scanner/proton" className="block">
+                <div className="border rounded-lg p-4 hover:border-primary-500 hover:bg-primary-50 transition-colors h-full">
+                  <div className="aspect-w-16 aspect-h-9 w-full h-32 bg-gray-100 rounded-md mb-3 flex items-center justify-center">
+                    <span className="text-2xl font-bold text-gray-400">PROTON</span>
+                  </div>
+                  <h3 className="font-medium text-center">
+                    {language === 'ms' ? 'Pengimbas Proton' : 'Proton Scanner'}
+                  </h3>
                 </div>
-                <h3 className="font-medium text-center text-gray-500">
-                  {language === 'ms' ? 'Akan Datang' : 'Coming Soon'}
-                </h3>
-              </div>
+              </Link>
             </div>
           </div>
           
