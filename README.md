@@ -1,73 +1,49 @@
-# MatMoto-PomenPro
+# MatMoto-PomenPro - Mechanics & Vehicle Parts Marketplace
 
-## AI-Powered Mechanics & Vehicle Parts Marketplace
-
-MatMoto-PomenPro is a Next.js application that connects motorists with nearby mechanics using AI-driven matching and provides a peer-to-peer marketplace for buying and selling vehicles and parts.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fyourusername%2Fmatmoto-pomenpro)
-
-## Latest Features (May 2025)
-
-- Modern CTA components with haptic feedback and visual effects
-- Animated hero section with gradient text and floating elements
-- Scroll reveal animations for enhanced user experience
-- Interactive feature cards with hover effects
-- Multilingual UI components in English and Bahasa Melayu
-- Camera scanner for identifying parts from Malaysian vehicle manuals
-- Enhanced mechanic and seller registration process
-- Support for Malaysian vehicle brands and parts
-- Brand-specific scanners for Malaysian vehicles:
-  - Yamaha parts scanner with data from yamaha-motor.com.my
-  - Honda parts scanner with data from honda.com.my
-  - Proton parts scanner with data from proton.com
-  - Perodua parts scanner with data from perodua.com.my
-- API endpoints for integration with other systems:
-  - Parts search API with filtering by brand, model, and category
-  - Models API for retrieving vehicle model information
-  - Brands API for accessing supported vehicle brands
-  - API documentation endpoint
+A modern web application for connecting customers with mechanics and facilitating the purchase of vehicle parts and services.
 
 ## Features
 
-### Mechanic Finder
-- Geo-location search to find nearby mechanics
-- AI-powered matching based on vehicle issues
-- Real-time booking system
-- Emergency roadside assistance
-- Interactive map view
+- **User Authentication**
+  - Modern login and registration system
+  - Role-based access (Customer, Mechanic, Seller)
+  - Social login options
 
-### Marketplace
-- Buy and sell vehicles and parts
-- AI price suggestions
-- Search and filter functionality
-- Fraud prevention
+- **Marketplace**
+  - Browse and search for vehicle parts
+  - Filter by category, make, model, etc.
+  - Detailed product pages
 
-### AI Utilities
-- Vehicle diagnostics
-- Parts compatibility checker
-- Maintenance reminders
-- Voice search capability
-- AI Assistant chatbot
+- **Mechanic Services**
+  - Find nearby mechanics
+  - Book service appointments
+  - View mechanic profiles and reviews
+
+- **Shopping Cart**
+  - Add/remove items
+  - Update quantities
+  - Persistent cart across sessions
+
+- **Checkout & Payments**
+  - Secure payment processing with Stripe
+  - Order history and tracking
+  - Multiple shipping addresses
 
 ## Tech Stack
 
-- **Frontend**: Next.js 14 (App Router), Tailwind CSS
+- **Frontend**: Next.js, React, TailwindCSS
 - **Backend**: Next.js API Routes
-- **Database**: PostgreSQL (via Prisma)
-- **AI/ML**: OpenAI API integration
-- **Maps**: Mapbox for location services
-- **Auth**: NextAuth.js
+- **Database**: PostgreSQL with Prisma ORM
+- **Authentication**: NextAuth.js
 - **Payments**: Stripe
-- **Real-time**: Pusher
-- **PWA**: next-pwa for Progressive Web App support
-- **Analytics**: Custom analytics implementation
+- **Deployment**: Vercel
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js 18.17.0 or later
-- npm or yarn
+- Node.js 18+ and npm
+- PostgreSQL database
 
 ### Installation
 
@@ -80,48 +56,56 @@ MatMoto-PomenPro is a Next.js application that connects motorists with nearby me
 2. Install dependencies:
    ```bash
    npm install
-   # or
-   yarn
    ```
 
-3. Create a `.env.local` file in the root directory and add the necessary environment variables (see `.env.local.example`).
+3. Set up environment variables:
+   ```bash
+   cp .env.local.example .env.local
+   ```
+   Then edit `.env.local` with your configuration values.
 
-4. Run the development server:
+4. Set up the database:
+   ```bash
+   npx prisma migrate dev
+   ```
+
+5. Start the development server:
    ```bash
    npm run dev
-   # or
-   yarn dev
    ```
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+6. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Deployment
+## Database Setup
 
-This project is set up for continuous deployment with GitHub Actions to Vercel. Simply push to the main branch, and the workflow will automatically deploy your changes.
+The application uses Prisma ORM with PostgreSQL. To set up your database:
 
-### Environment Variables
+1. Make sure PostgreSQL is installed and running
+2. Update the `DATABASE_URL` in your `.env.local` file
+3. Run migrations:
+   ```bash
+   npx prisma migrate dev
+   ```
+4. (Optional) Seed the database:
+   ```bash
+   npx prisma db seed
+   ```
 
-Make sure to set the following secrets in your GitHub repository:
+## Payment Processing
 
-- `VERCEL_TOKEN`
-- `VERCEL_ORG_ID`
-- `VERCEL_PROJECT_ID`
-- `NEXT_PUBLIC_APP_URL`
-- `NEXT_PUBLIC_MAPBOX_TOKEN`
-- `NEXT_PUBLIC_PUSHER_APP_ID`
-- `NEXT_PUBLIC_PUSHER_KEY`
-- `NEXT_PUBLIC_PUSHER_CLUSTER`
+This project uses Stripe for payment processing. To test payments:
 
-## Multilingual Support
+1. Set up a Stripe account and get your API keys
+2. Add the keys to your `.env.local` file
+3. Use Stripe's test card numbers for testing:
+   - Card number: 4242 4242 4242 4242
+   - Expiry: Any future date
+   - CVC: Any 3 digits
 
-The application supports both English and Bahasa Melayu, with Bahasa Melayu set as the default language for Malaysian users.
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgements
-
-- Next.js team for the amazing framework
-- Tailwind CSS for the utility-first CSS framework
-- All open-source libraries used in this project
