@@ -16,8 +16,10 @@ MatMoto-PomenPro is a Next.js application that connects motorists with nearby me
 - Camera scanner for identifying parts from Malaysian vehicle manuals
 - Enhanced mechanic and seller registration process
 - Support for Malaysian vehicle brands and parts
-- Yamaha parts scanner with data from yamaha-motor.com.my
-- Brand-specific scanners for Malaysian motorcycles and cars
+- Brand-specific scanners for Malaysian vehicles:
+  - Yamaha parts scanner with data from yamaha-motor.com.my
+  - Honda parts scanner with data from honda.com.my
+  - Proton parts scanner with data from proton.com
 
 ## Features
 
