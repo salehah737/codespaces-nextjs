@@ -21,6 +21,11 @@ MatMoto-PomenPro is a Next.js application that connects motorists with nearby me
   - Honda parts scanner with data from honda.com.my
   - Proton parts scanner with data from proton.com
   - Perodua parts scanner with data from perodua.com.my
+- API endpoints for integration with other systems:
+  - Parts search API with filtering by brand, model, and category
+  - Models API for retrieving vehicle model information
+  - Brands API for accessing supported vehicle brands
+  - API documentation endpoint
 
 ## Features
 
