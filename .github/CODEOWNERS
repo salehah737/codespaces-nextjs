@@ -1,0 +1,12 @@
+# These owners will be the default owners for everything in the repo
+* @salehah737
+
+# Specific ownership for certain directories
+/app/components/ @salehah737
+/app/lib/ @salehah737
+/app/context/ @salehah737
+
+# Ownership for configuration files
+*.js @salehah737
+*.json @salehah737
+*.yml @salehah737
