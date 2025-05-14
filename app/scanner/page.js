@@ -5,6 +5,8 @@ import { useLanguage } from '../context/LanguageContext';
 import { useAnalytics } from '../context/AnalyticsContext';
 import PartScanner from '../components/scanner/PartScanner';
 import ScrollReveal from '../components/ScrollReveal';
+import CTAButton from '../components/CTAButton';
+import Link from 'next/link';
 
 export default function ScannerPage() {
   const { language } = useLanguage();
@@ -31,8 +33,55 @@ export default function ScannerPage() {
         </ScrollReveal>
         
         <div className="max-w-3xl mx-auto">
-          <div className="bg-white rounded-lg shadow-md overflow-hidden">
+          {/* Brand-specific scanners */}
+          <div className="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 className="text-xl font-semibold mb-4">
+              {language === 'ms' ? 'Pengimbas Khusus Jenama' : 'Brand-Specific Scanners'}
+            </h2>
+            <p className="text-gray-600 mb-6">
+              {language === 'ms' 
+                ? 'Pilih pengimbas khusus untuk jenama tertentu bagi mendapatkan hasil yang lebih tepat.' 
+                : 'Choose a brand-specific scanner for more accurate results.'}
+            </p>
+            
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+              <Link href="/scanner/yamaha" className="block">
+                <div className="border rounded-lg p-4 hover:border-primary-500 hover:bg-primary-50 transition-colors h-full">
+                  <div className="aspect-w-16 aspect-h-9 w-full h-32 bg-gray-100 rounded-md mb-3 flex items-center justify-center">
+                    <span className="text-2xl font-bold text-gray-400">YAMAHA</span>
+                  </div>
+                  <h3 className="font-medium text-center">
+                    {language === 'ms' ? 'Pengimbas Yamaha' : 'Yamaha Scanner'}
+                  </h3>
+                </div>
+              </Link>
+              
+              <div className="border rounded-lg p-4 bg-gray-50 h-full opacity-60">
+                <div className="aspect-w-16 aspect-h-9 w-full h-32 bg-gray-100 rounded-md mb-3 flex items-center justify-center">
+                  <span className="text-2xl font-bold text-gray-400">HONDA</span>
+                </div>
+                <h3 className="font-medium text-center text-gray-500">
+                  {language === 'ms' ? 'Akan Datang' : 'Coming Soon'}
+                </h3>
+              </div>
+              
+              <div className="border rounded-lg p-4 bg-gray-50 h-full opacity-60">
+                <div className="aspect-w-16 aspect-h-9 w-full h-32 bg-gray-100 rounded-md mb-3 flex items-center justify-center">
+                  <span className="text-2xl font-bold text-gray-400">PROTON</span>
+                </div>
+                <h3 className="font-medium text-center text-gray-500">
+                  {language === 'ms' ? 'Akan Datang' : 'Coming Soon'}
+                </h3>
+              </div>
+            </div>
+          </div>
+          
+          {/* Generic scanner */}
+          <div className="bg-white rounded-lg shadow-md overflow-hidden mb-8">
             <div className="p-6">
+              <h2 className="text-xl font-semibold mb-4">
+                {language === 'ms' ? 'Pengimbas Umum' : 'Generic Scanner'}
+              </h2>
               <PartScanner onScanResult={handleScanResult} />
             </div>
           </div>
@@ -40,7 +89,7 @@ export default function ScannerPage() {
           {scanResults.length > 0 && (
             <div className="mt-8">
               <h2 className="text-xl font-semibold mb-4">
-                {language === 'ms' ? 'Alat Ganti Serasi' : 'Compatible Parts'}
+                {language === 'ms' ? 'Alat Ganti Dikesan' : 'Parts Detected'}
               </h2>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -87,8 +136,8 @@ export default function ScannerPage() {
             </ol>
             <p className="mt-4 text-sm text-gray-600">
               {language === 'ms' 
-                ? 'Pengimbas ini menyokong manual kenderaan Malaysia termasuk Proton, Perodua, Honda, Toyota, dan lain-lain.' 
-                : 'This scanner supports Malaysian vehicle manuals including Proton, Perodua, Honda, Toyota, and more.'}
+                ? 'Pengimbas ini menyokong manual kenderaan Malaysia termasuk Proton, Perodua, Honda, Toyota, Yamaha dan lain-lain.' 
+                : 'This scanner supports Malaysian vehicle manuals including Proton, Perodua, Honda, Toyota, Yamaha, and more.'}
             </p>
           </div>
         </div>
