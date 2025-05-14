@@ -77,6 +77,17 @@ export default function ScannerPage() {
                   </h3>
                 </div>
               </Link>
+              
+              <Link href="/scanner/perodua" className="block">
+                <div className="border rounded-lg p-4 hover:border-primary-500 hover:bg-primary-50 transition-colors h-full">
+                  <div className="aspect-w-16 aspect-h-9 w-full h-32 bg-gray-100 rounded-md mb-3 flex items-center justify-center">
+                    <span className="text-2xl font-bold text-gray-400">PERODUA</span>
+                  </div>
+                  <h3 className="font-medium text-center">
+                    {language === 'ms' ? 'Pengimbas Perodua' : 'Perodua Scanner'}
+                  </h3>
+                </div>
+              </Link>
             </div>
           </div>
           
