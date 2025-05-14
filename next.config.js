@@ -1,25 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
+  output: 'export',
+  basePath: process.env.NODE_ENV === 'production' ? '/MatMoto-PomenPro' : '',
   images: {
-    domains: ['placehold.co', 'images.unsplash.com'],
+    unoptimized: true,
   },
-  experimental: {
-    serverActions: {
-      allowedOrigins: ['localhost:3000', 'matmoto-pomenpro.vercel.app'],
-    },
-    serverComponentsExternalPackages: ['@prisma/client'],
-  },
-};
+}
 
-// Only use PWA in production to avoid development issues
-const withPWA = process.env.NODE_ENV === 'production'
-  ? require('next-pwa')({
-      dest: 'public',
-      register: true,
-      skipWaiting: true,
-    })
-  : (config) => config;
-
-module.exports = withPWA(nextConfig);
+module.exports = nextConfig
