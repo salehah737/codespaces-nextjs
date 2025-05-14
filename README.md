@@ -4,6 +4,8 @@
 
 MatMoto-PomenPro is a Next.js application that connects motorists with nearby mechanics using AI-driven matching and provides a peer-to-peer marketplace for buying and selling vehicles and parts.
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fyourusername%2Fmatmoto-pomenpro)
+
 ## Features
 
 ### Mechanic Finder
@@ -11,6 +13,7 @@ MatMoto-PomenPro is a Next.js application that connects motorists with nearby me
 - AI-powered matching based on vehicle issues
 - Real-time booking system
 - Emergency roadside assistance
+- Interactive map view
 
 ### Marketplace
 - Buy and sell vehicles and parts
@@ -22,6 +25,8 @@ MatMoto-PomenPro is a Next.js application that connects motorists with nearby me
 - Vehicle diagnostics
 - Parts compatibility checker
 - Maintenance reminders
+- Voice search capability
+- AI Assistant chatbot
 
 ## Tech Stack
 
@@ -33,6 +38,8 @@ MatMoto-PomenPro is a Next.js application that connects motorists with nearby me
 - **Auth**: NextAuth.js
 - **Payments**: Stripe
 - **Real-time**: Pusher
+- **PWA**: next-pwa for Progressive Web App support
+- **Analytics**: Custom analytics implementation
 
 ## Getting Started
 
@@ -66,6 +73,23 @@ MatMoto-PomenPro is a Next.js application that connects motorists with nearby me
    ```
 
 5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+
+## Deployment
+
+This project is set up for continuous deployment with GitHub Actions to Vercel. Simply push to the main branch, and the workflow will automatically deploy your changes.
+
+### Environment Variables
+
+Make sure to set the following secrets in your GitHub repository:
+
+- `VERCEL_TOKEN`
+- `VERCEL_ORG_ID`
+- `VERCEL_PROJECT_ID`
+- `NEXT_PUBLIC_APP_URL`
+- `NEXT_PUBLIC_MAPBOX_TOKEN`
+- `NEXT_PUBLIC_PUSHER_APP_ID`
+- `NEXT_PUBLIC_PUSHER_KEY`
+- `NEXT_PUBLIC_PUSHER_CLUSTER`
 
 ## Multilingual Support
 
