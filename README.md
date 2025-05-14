@@ -20,6 +20,7 @@ MatMoto-PomenPro is a Next.js application that connects motorists with nearby me
   - Yamaha parts scanner with data from yamaha-motor.com.my
   - Honda parts scanner with data from honda.com.my
   - Proton parts scanner with data from proton.com
+  - Perodua parts scanner with data from perodua.com.my
 
 ## Features
 
