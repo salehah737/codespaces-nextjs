@@ -2,6 +2,31 @@
 
 A modern web application for connecting customers with mechanics and facilitating the purchase of vehicle parts and services.
 
+## Latest Features (May 2025)
+
+- Modern CTA components with haptic feedback and visual effects
+- Animated hero section with gradient text and floating elements
+- Scroll reveal animations for enhanced user experience
+- Interactive feature cards with hover effects
+- Multilingual UI components in English and Bahasa Melayu
+- Camera scanner for identifying parts from Malaysian vehicle manuals
+- Enhanced mechanic and seller registration process
+- Support for Malaysian vehicle brands and parts
+- Brand-specific scanners for Malaysian vehicles:
+  - Yamaha parts scanner with data from yamaha-motor.com.my
+  - Honda parts scanner with data from honda.com.my
+  - Proton parts scanner with data from proton.com
+  - Perodua parts scanner with data from perodua.com.my
+- API endpoints for integration with other systems:
+  - Parts search API with filtering by brand, model, and category
+  - Models API for retrieving vehicle model information
+  - Brands API for accessing supported vehicle brands
+  - API documentation endpoint
+- Community features:
+  - Discord integration for real-time discussions and support
+  - Community forums for in-depth discussions
+  - Social media integration
+
 ## Features
 
 - **User Authentication**
@@ -29,6 +54,16 @@ A modern web application for connecting customers with mechanics and facilitatin
   - Order history and tracking
   - Multiple shipping addresses
 
+- **Parts Scanner**
+  - Scan vehicle parts using your camera
+  - Identify parts from Malaysian vehicle brands
+  - Get detailed information and compatibility
+
+- **Community**
+  - Discord server for real-time support
+  - Forums for discussions and knowledge sharing
+  - Social media integration
+
 ## Tech Stack
 
 - **Frontend**: Next.js, React, TailwindCSS
@@ -49,8 +84,8 @@ A modern web application for connecting customers with mechanics and facilitatin
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/matmoto-pomenpro.git
-   cd matmoto-pomenpro
+   git clone https://github.com/salehah737/MatMoto-PomenPro.git
+   cd MatMoto-PomenPro
    ```
 
 2. Install dependencies:
@@ -104,8 +139,8 @@ This project uses Stripe for payment processing. To test payments:
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) file for details.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
